@@ -1,5 +1,5 @@
 # react-typescript-boilerplate
-Boilerplate for React project, using typescript.
+React boilerplate project, using typescript language.
 
 ## Installation
 To initialize project and install all dependencies, run:
