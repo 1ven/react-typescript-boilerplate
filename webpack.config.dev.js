@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const failPlugin = require('webpack-fail-plugin');
 
 module.exports = {
   devtool: "cheap-module-eval-source-map",
@@ -21,7 +20,6 @@ module.exports = {
     }],
   },
   plugins: [
-    /* failPlugin, */
     new webpack.HotModuleReplacementPlugin(),
   ],
   resolve: {
