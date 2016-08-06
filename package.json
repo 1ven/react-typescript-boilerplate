@@ -4,8 +4,9 @@
   "description": "React js boilerplate using typescript",
   "main": "index.js",
   "scripts": {
-    "postinstall": "typings install",
-    "develop": "node server"
+    "develop": "NODE_ENV=development node server",
+    "production": "NODE_ENV=production webpack -p --config webpack.config.prod.js",
+    "postinstall": "typings install"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,8 @@
     "typescript": "^1.8.10",
     "typings": "^1.3.2",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "webpack-fail-plugin": "^1.0.5"
   },
   "dependencies": {
     "react": "^15.3.0",
