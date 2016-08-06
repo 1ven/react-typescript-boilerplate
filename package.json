@@ -1,0 +1,24 @@
+{
+  "name": "react-typescript-boilerplate",
+  "version": "1.0.0",
+  "description": "React js boilerplate using typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1ven/react-typescript-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "typescript",
+    "boilerplate"
+  ],
+  "author": "1ven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1ven/react-typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/1ven/react-typescript-boilerplate#readme"
+}
