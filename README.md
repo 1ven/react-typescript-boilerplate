@@ -1,4 +1,3 @@
-# react-typescript-boilerplate
 React boilerplate project, using typescript language.
 
 ## Installation
