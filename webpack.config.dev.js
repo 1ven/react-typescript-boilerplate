@@ -19,10 +19,6 @@ module.exports = {
       test: /\.tsx?$/,
       loader: "ts-loader",
     }],
-    preLoaders: [{
-      test: /\.js$/,
-      loader: "source-map-loader",
-    }],
   },
   plugins: [
     /* failPlugin, */
