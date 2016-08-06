@@ -1,7 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
+const failPlugin = require('webpack-fail-plugin');
 
 module.exports = {
+  devtool: "source-map",
   entry: [
     "webpack-dev-server/client?http://localhost:3000",
     "webpack/hot/only-dev-server",
@@ -12,13 +14,6 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/static/',
   },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-  ],
-  devtool: "source-map",
-  resolve: {
-    extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"],
-  },
   module: {
     loaders: [{
       test: /\.tsx?$/,
@@ -28,5 +23,12 @@ module.exports = {
       test: /\.js$/,
       loader: "source-map-loader",
     }],
+  },
+  plugins: [
+    /* failPlugin, */
+    new webpack.HotModuleReplacementPlugin(),
+  ],
+  resolve: {
+    extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"],
   },
 };
