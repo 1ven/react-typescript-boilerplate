@@ -13,5 +13,4 @@ npm run develop
 ```
 
 ## Todo
-- Production build
 - Failing the build on TypeScript compilation error
