@@ -1,12 +1,20 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: [
+    "webpack-dev-server/client?http://localhost:3000",
+    "webpack/hot/only-dev-server",
+    "./src/index.tsx",
+  ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/static/',
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+  ],
   devtool: "source-map",
   resolve: {
     extensions: ["", ".webpack.js", ".web.js", ".ts", ".tsx", ".js"],
